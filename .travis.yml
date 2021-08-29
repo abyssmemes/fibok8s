@@ -12,7 +12,7 @@ before_install:
   - source ~/.bashrc
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
-  - gcloud auth active-service-accaunt --key-file service-accaunt.json
+  - gcloud auth active-service-account --key-file service-account.json
   - gcloud config set project fibok8s
   - gcloud config set compute/zone europe-west6-a 
   - gcloud container clusters get-credentials fibok8s
